@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: Outfit, sans-serif;
+}
+
+body {
+  background-color: #0d192b;
+}
+
+.card {
+  max-width: 320px;
+  background-color: #14253d;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.card__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.card__paragraph {
+  font-size: .9rem;
+  color: #8bacda;
+}
+/*# sourceMappingURL=main.css.map */
