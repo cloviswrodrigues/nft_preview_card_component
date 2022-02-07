@@ -27,10 +27,71 @@ body {
 .card__title {
   font-size: 1.2rem;
   color: white;
+  margin-top: .8rem;
 }
 
 .card__paragraph {
   font-size: .9rem;
   color: #8bacda;
+  font-weight: 300;
+  margin: .8rem 0;
+}
+
+.card__eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__eth div:nth-child(1) {
+  font-size: .9rem;
+  color: #00fff7;
+}
+
+.card__eth div:nth-child(2) {
+  color: #8bacda;
+  font-size: .9rem;
+}
+
+.card__divider {
+  border: 1px solid #2f415b;
+  margin: 1rem 0;
+}
+
+.card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__footer img {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.card__footer p {
+  margin-left: 1rem;
+  color: #8bacda;
+  font-size: .9rem;
+}
+
+.card__footer p span {
+  color: white;
+  font-size: .9rem;
 }
 /*# sourceMappingURL=main.css.map */
