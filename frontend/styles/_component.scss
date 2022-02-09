@@ -26,16 +26,27 @@
     &__eth {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;        
-
+        justify-content: space-between;  
+        
+        
         & div:nth-child(1) {
             font-size: .9rem;
             color: $color-cyan;
+
+            &::before {
+                content: url('/frontend/assets/icon-ethereum.svg');
+                margin-right: 6px;
+            }
         }
 
         & div:nth-child(2) {
             color: $color-soft-blue;            
             font-size: .9rem;
+
+            &::before {
+                content: url('/frontend/assets/icon-clock.svg');
+                margin-right: 6px;
+            }
         }
     }
 
@@ -50,7 +61,7 @@
         align-items: center;
 
         img {
-            width: 50px;
+            width: 40px;
             border-radius: 50%;
             border: 1px solid $color-white;
         }

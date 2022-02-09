@@ -8,7 +8,12 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card {
@@ -55,9 +60,19 @@ body {
   color: #00fff7;
 }
 
+.card__eth div:nth-child(1)::before {
+  content: url("/frontend/assets/icon-ethereum.svg");
+  margin-right: 6px;
+}
+
 .card__eth div:nth-child(2) {
   color: #8bacda;
   font-size: .9rem;
+}
+
+.card__eth div:nth-child(2)::before {
+  content: url("/frontend/assets/icon-clock.svg");
+  margin-right: 6px;
 }
 
 .card__divider {
@@ -79,7 +94,7 @@ body {
 }
 
 .card__footer img {
-  width: 50px;
+  width: 40px;
   border-radius: 50%;
   border: 1px solid white;
 }
