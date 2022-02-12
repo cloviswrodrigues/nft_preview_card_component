@@ -4,16 +4,32 @@
     margin: auto;
     padding: 1.5rem;
     border-radius: 20px;
+    position: relative;
 
-    &__img {
-        width: 100%;
-        border-radius: 10px;
+    &__img {     
+        position: relative;   
+
+        &--square {
+            width: 100%;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        &--view {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 
     &__title {
         font-size: 1.2rem;
         color: $color-white;
         margin-top: .8rem;
+
+        &:hover {
+            color: $color-cyan;
+        }
     }
 
     &__paragraph {
@@ -27,6 +43,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;  
+        align-items: center;
         
         
         & div:nth-child(1) {
@@ -35,7 +52,8 @@
 
             &::before {
                 content: url('/frontend/assets/icon-ethereum.svg');
-                margin-right: 6px;
+                margin-right: 6px;                               
+                vertical-align: middle;
             }
         }
 
@@ -45,13 +63,15 @@
 
             &::before {
                 content: url('/frontend/assets/icon-clock.svg');
-                margin-right: 6px;
+                height: 5px;
+                margin-right: 6px; 
+                vertical-align: middle;
             }
         }
     }
 
     &__divider {
-        border: 1px solid $color-line;
+        border: .5px solid $color-line;
         margin: 1rem 0;
     }
 
@@ -71,10 +91,14 @@
             color: $color-soft-blue;
             font-size: .9rem;
 
-            span {
+            a {
                 color: $color-white;
                 font-size: .9rem;
+
+                &:hover {
+                    color: $color-cyan;
+                }
             }
         }
-    }
+    }    
 }

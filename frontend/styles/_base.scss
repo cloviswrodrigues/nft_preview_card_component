@@ -23,3 +23,8 @@ body {
     background-color: $color-bg-main;
     display: flex;
 }
+
+a {
+    all: unset;
+    cursor: pointer;
+}

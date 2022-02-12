@@ -16,23 +16,44 @@ body {
   display: flex;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 .card {
   max-width: 320px;
   background-color: #14253d;
   margin: auto;
   padding: 1.5rem;
   border-radius: 20px;
+  position: relative;
 }
 
 .card__img {
+  position: relative;
+}
+
+.card__img--square {
   width: 100%;
   border-radius: 10px;
+  z-index: 1;
+}
+
+.card__img--view {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .card__title {
   font-size: 1.2rem;
   color: white;
   margin-top: .8rem;
+}
+
+.card__title:hover {
+  color: #00fff7;
 }
 
 .card__paragraph {
@@ -53,6 +74,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card__eth div:nth-child(1) {
@@ -63,6 +87,7 @@ body {
 .card__eth div:nth-child(1)::before {
   content: url("/frontend/assets/icon-ethereum.svg");
   margin-right: 6px;
+  vertical-align: middle;
 }
 
 .card__eth div:nth-child(2) {
@@ -72,11 +97,13 @@ body {
 
 .card__eth div:nth-child(2)::before {
   content: url("/frontend/assets/icon-clock.svg");
+  height: 5px;
   margin-right: 6px;
+  vertical-align: middle;
 }
 
 .card__divider {
-  border: 1px solid #2f415b;
+  border: 0.5px solid #2f415b;
   margin: 1rem 0;
 }
 
@@ -105,8 +132,12 @@ body {
   font-size: .9rem;
 }
 
-.card__footer p span {
+.card__footer p a {
   color: white;
   font-size: .9rem;
+}
+
+.card__footer p a:hover {
+  color: #00fff7;
 }
 /*# sourceMappingURL=main.css.map */
